@@ -1,0 +1,16 @@
+{% load static %}
+<head>
+	<link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+<body>
+	<h1>Welcome to Home Page</h1>
+	<h2>
+		{% for i in products %}
+		
+			<a href="{% url 'app:detail' i.id %}">
+			ID: {{i.id}} | Comment: {{i.description}} | Narxi: {{i.price}}$ <br/>
+			</a>
+		{% endfor %}
+	</h2>
+</body>
+</html>
