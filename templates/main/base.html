@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="{% static '/styles1.css' %}" rel="stylesheet">
+	<title>HOME PAGE</title>
+</head>
+<body>
+	<nav class="bg-blue-100 shadow-lg">
+		<div class="max-w-8xl m-auto px-10">
+			<div class="flex justify-between">
+				<div class="flex space-x-7">
+					<div >
+						<a href="###" class="flex items-center px-2 py-4">
+						<img class="h-8 w-8" src="{% static '/images/shopping-cart.png' %}" alt="logo" />
+						<span class="text-gray-500 font-semibold text-xl">Pro Shop</span>
+						</a>
+					</div>
+					<div class="items-center flex space-x-1">
+						<a href="###" class="py-3 px-2 text-gray-500 font-semibold border-b-4 border-green-500">Home</a>
+						<a href="###" class="py-3 px-2 text-gray-500 font-semibold">About</a>
+						<a href="###" class="py-3 px-2 text-gray-500 font-semibold">Contacts</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	{% block content %}
+	
+	{% endblock %}
+</body>
+</html>
